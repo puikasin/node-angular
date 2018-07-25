@@ -1,0 +1,50 @@
+<!-- Begin page -->
+<div id="wrapper">
+    <!-- ========== Left Sidebar Start ========== -->
+
+    <app-h-side-menu></app-h-side-menu>
+
+    <!-- Left Sidebar End -->
+
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+
+    <div class="content-page">
+
+        <ng4-loading-spinner> </ng4-loading-spinner>
+        <!-- Top Bar Start -->
+        <app-h-top-menu></app-h-top-menu>
+        <!-- Top Bar End -->
+
+
+
+        <!-- Start Page content -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                        <ng-content></ng-content>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- container -->
+        </div>
+        <!-- content -->
+
+        <footer class="footer text-right">
+            2018 © Highdmin. - Coderthemes.com
+        </footer>
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
+
+
+</div>
+<!-- END wrapper -->

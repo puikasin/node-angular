@@ -1,0 +1,80 @@
+<body class="account-pages">
+
+    <!-- Begin page -->
+    <!-- <div class="accountbg" style="background: url('assets/images/bg-1.jpg');background-size: cover;"></div> -->
+
+    <div class="wrapper-page account-page-full">
+
+        <div class="card">
+            <div class="card-block">
+
+                <div class="account-box">
+
+                    <div class="card-box p-5">
+                        <h2 class="text-uppercase text-center pb-4">
+                            ลงชื่อเข้าใช้
+                        </h2>
+
+                        <form class="form-horizontal" [formGroup]="form" (submit)="onSubmit()">
+
+                            <div class="form-group m-b-20 row">
+                                <div class="col-12">
+                                    <label>อีเมล์</label>
+                                    <input type="text" class="form-control" formControlName="email" id="email" placeholder="กรุณากรอกข้อมูล">
+                                </div>
+                            </div>
+
+                            <div class="form-group row m-b-20">
+                                <div class="col-12">
+                                    <a href="page-recoverpw.html" class="text-muted pull-right">
+                                        <small>
+                                            <b>ลืมรหัสผ่าน?</b>
+                                        </small>
+                                    </a>
+                                    <label for="password">Password</label>
+                                    <input class="form-control" type="password" formControlName="password" id="password" placeholder="กรุณากรอกข้อมูล">
+                                </div>
+                            </div>
+
+                            <div class="form-group row m-b-20">
+                                <div class="col-12">
+
+                                    <div class="checkbox checkbox-custom">
+                                        <input formControlName="remember" type="checkbox">
+                                        <label for="remember">
+                                            จำฉันไว้ในระบบ
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group row text-center m-t-10">
+                                <div class="col-12">
+                                    <button class="btn btn-block btn-custom waves-effect waves-light" type="submit">ลงชื่อเข้าใช้</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <div class="row m-t-50">
+                            <div class="col-sm-12 text-center">
+                                <p class="text-muted">ยังไม่มีบัญชีผู้ใช้?
+                                    <a [routerLink]="['/',Url.Register]" class="text-dark m-l-5">
+                                        <b>ลงทะเบียน</b>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="m-t-40 text-center">
+            <p class="account-copyright">2018 © Highdmin. - Coderthemes.com</p>
+        </div>
+
+    </div>

@@ -1,0 +1,69 @@
+<div class="left side-menu">
+
+    <div class="slimscroll-menu" id="remove-scroll">
+
+        <!-- LOGO -->
+        <div class="topbar-left text-menu">
+            <!-- โปรแกรมจัดการ -->
+            <a href="index.html" class="logo">
+                <span>
+        <img src="assets/images/logo.png" alt="" height="22">
+
+      </span>
+                <i>
+        <img src="assets/images/logo_sm.png" alt="" height="28">
+      </i>
+            </a>
+        </div>
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu" style="margin-top: 80px">
+
+            <ul class="metismenu" id="side-menu">
+
+                <!--<li class="menu-title">Navigation</li>-->
+
+                <li *ngIf="UserLogin.role != Role.Member">
+                    <a [routerLink]="['/', AppURL.Home, HomeURL.Dashboard]" routerLinkActive="active">
+                        <i class="fa fa-square-o"></i>
+                        <span> Dashboard </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="widgets.html">
+                        <i class="fa fa-question-circle"></i>
+                        <span> ตั้งค่าโปรแกรมทั่วไป </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="widgets.html">
+                        <i class="fa fa-question-circle"></i>
+                        <span> คู่มือจัดการทรัพย์สิน </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="widgets.html">
+                        <i class="fa fa-question-circle"></i>
+                        <span>คู่มือบันทึกงานซ่อม </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="widgets.html">
+                        <i class="fa fa-question-circle"></i>
+                        <span> คู่มือสต๊อกสินค้า </span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- Sidebar -->
+
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Sidebar -left -->
+
+</div>
